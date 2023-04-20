@@ -1,0 +1,54 @@
+[
+    {
+        "id": "1",
+        "title": "Barbell Bench Press",
+        "img": "./images/Barbell-Bench-Press.png",
+        "description": "Grip a barbell with hands slightly wider than shoulder width. The bar should be directly over the shoulders. Press your feet firmly into the ground and keep your hips on the bench throughout the entire movement. Keep your core engaged and maintain a neutral spine position throughout the movement.",
+        "age": "20-25",
+        "time": 30
+    },
+    {
+        "id": "2",
+        "title": "Incline Dumbbell Press",
+        "img": "./images/Incline-Dumbbell-Press.png",
+        "description": "The incline dumbbell press is the dumbbell variation of the barbell incline bench press and uses an incline or adjustable bench rather than an incline bench rack.",
+        "age": "20-25",
+        "time": 30
+    },
+
+    {
+        "id": "3",
+        "title": "Pull-Up",
+        "img": "./images/Pull-Up.png",
+        "description": "A pull-up is an upper-body strength exercise. The pull-up is a closed-chain movement where the body is suspended by the hands, gripping a bar or other implement at a distance typically wider than shoulder-width, and pulled up. As this happens, the elbows flex and the shoulders adduct and extend to bring the elbows to the torso.",
+        "age": "20-25",
+        "time": 30
+    },
+
+    {
+        "id": "4",
+        "title": "Barbell Row",
+        "img": "./images/Barbell-Row.png",
+        "description": "The barbell row is a classic back exercise and one of the most popular strength training exercises, according to data from our workout log app. The barbell row is also known as the bent-over row, which refers to the bent-over position you hold throughout the exercise.",
+        "age": "20-25",
+        "time": 30
+    },
+
+    {
+        "id": "5",
+        "title": "Dumbbell Shoulder Press",
+        "img": "./images/Dumbbell-Shoulder-Press.png",
+        "description": "Hold the dumbbells by your shoulders with your palms facing forwards and your elbows out to the sides and bent at a 90° angle. Without leaning back, extend through your elbows to press the weights above your head. Then slowly return to the starting position.",
+        "age": "20-25",
+        "time": 30
+    },
+
+    {
+        "id": "6",
+        "title": "Barbell Shrug",
+        "img": "./images/Barbell-Shrug.png",
+        "description": "Stand tall, holding a bar in an overhand grip with your hands just outside your thighs. Lift your shoulders straight up, hold for one or two seconds in this elevated position, then lower them back to the start. Throughout the exercise, make sure you keep your shoulders back and your spine and elbows straight.",
+        "age": "20-25",
+        "time": 30
+    }
+]
