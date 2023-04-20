@@ -3,7 +3,6 @@ import './Sidebar.css'
 const Sidebar = () => {
     return (
         <div className='sidebar'>
-            <h1>Sidebar</h1>
             <User></User>
         </div>
     );
@@ -12,21 +11,23 @@ const Sidebar = () => {
 const User = () =>{
     return(
         <div>
-            <div>
-                <img src="" alt="" />
-                <h2>Iyasin Raj</h2>
-                <p>Location</p>
+            <div className='user-container'>
+                <img src="https://avatars.githubusercontent.com/u/78220038?v=4" alt="" />
+                <div>
+                    <h2 className='name'>Iyasin Raj</h2>
+                    <p className='location'>Rampura, Dhaka</p>
+                </div>
             </div>
             <UserDetails></UserDetails>
             <AddAbreack></AddAbreack>
             <ExerciseDetails></ExerciseDetails>
-            <button>Activity Completed</button>
+            <button className='btn-complete'>Activity Completed</button>
         </div>
     )
 }
 const UserDetails = () =>{
     return(
-        <div>
+        <div className='user-details'>
             <div>
                 <p><strong>75</strong><span>kg</span></p>
                 <p>Weight</p>
@@ -46,8 +47,8 @@ const UserDetails = () =>{
 const AddAbreack = () =>{
     return(
         <div>
-            <h2>Add A Breack</h2>
-            <div>
+            <h2 className='title'>Add A Breack</h2>
+            <div className='add-breack'>
                 <button>10<span>s</span></button>
                 <button>20<span>s</span></button>
                 <button>30<span>s</span></button>
@@ -61,13 +62,13 @@ const AddAbreack = () =>{
 const ExerciseDetails = () => {
     return(
         <div>
-            <h2>Exercise Details</h2>
-            <div>
-                <div>
+            <h2 className='title'>Exercise Details</h2>
+            <div className='exercise'>
+                <div className='exercise-time'>
                     <p>Exercise Time</p>
                     <p>200 seconds</p>
                 </div>
-                <div>
+                <div className='exercise-time'>
                     <p>Breack Time</p>
                     <p>15 seconds</p>
                 </div>
