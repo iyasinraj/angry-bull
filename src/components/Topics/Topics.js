@@ -8,7 +8,7 @@ const Topics = () => {
         .then(data => setData(data))
     },[])
     return (
-        <div>
+        <div className='topic-div'>
             <h1>Select today's exercise</h1>
             <div className='topics'>
                 {
