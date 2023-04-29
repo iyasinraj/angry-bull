@@ -1,16 +1,9 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Sidebar from './components/Sidebar/Sidebar';
-import Topics from './components/Topics/Topics';
+import Main from './components/Main/Main';
 function App() {
   return (
-    <div className='main'>
-      <main className='mainsection'>
-        <Navbar></Navbar>
-        <Topics></Topics>
-      </main>
-      <Sidebar></Sidebar>
-
+    <div>
+        <Main></Main>
     </div>
   );
 }

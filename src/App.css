@@ -1,11 +1,3 @@
 body::-webkit-scrollbar{
   display: none;
 }
-.main{
-  display: flex;
-  background-color: rgba(120, 139, 139, 0.534);
-}
-.mainsection{
-  padding: 10px 20px;
-  width: 70vw;
-}
