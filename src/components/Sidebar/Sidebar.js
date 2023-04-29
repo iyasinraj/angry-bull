@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css'
 import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
 import UserDetails from '../UserDetails/UserDetails';
 import AddAbreack from '../AddAbreack/AddAbreack';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Sidebar = (props) => {
+    const [breack, setBreack] = useState(0)
+    const breackTime = (time) => {
+        setBreack(time)
+    }
+    const showToast = () =>{
+        toast(`Congratulations! you have successfully added your exercise rutine. your total exercise time:${props.exercises} & maximum breack time after each exercise: ${breack}`, {
+            position:"top-right"
+        });
+    }
     return (
         <div className='sidebar'>
             <div className='user-container'>
@@ -14,9 +25,10 @@ const Sidebar = (props) => {
                 </div>
             </div>
             <UserDetails></UserDetails>
-            <AddAbreack></AddAbreack>
-            <ExerciseDetails exerciseTime={props.exercises}></ExerciseDetails>
-            <button className='btn-complete'>Activity Completed</button>
+            <AddAbreack breackTime={breackTime}></AddAbreack>
+            <ExerciseDetails breack={breack} exerciseTime={props.exercises}></ExerciseDetails>
+            <button onClick={showToast} className='btn-complete'>Activity Completed</button>
+            <ToastContainer/>
         </div>
     );
 };

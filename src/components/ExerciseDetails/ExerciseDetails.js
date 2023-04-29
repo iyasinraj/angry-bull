@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ExerciseDetails = (props) => {
-    const {exerciseTime} = props
+    const {exerciseTime, breack} = props
 
     return (
         <div>
@@ -13,7 +13,7 @@ const ExerciseDetails = (props) => {
                 </div>
                 <div className='exercise-time'>
                     <p>Breack Time</p>
-                    <p>15 seconds</p>
+                    <p>{breack} seconds</p>
                 </div>
             </div>
         </div>

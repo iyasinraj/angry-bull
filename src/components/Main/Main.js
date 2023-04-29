@@ -4,10 +4,10 @@ import Sidebar from '../Sidebar/Sidebar';
 import Navbar from '../Navbar/Navbar';
 const Main = () => {
     const [exercise, setExercise] = useState(0)
-    const [data, setData] = useState([])
     const getData = (data) =>{
         setExercise(prevState => exercise + data)
     }
+    const [data, setData] = useState([])
     useEffect(() => {
         fetch('data.json')
         .then(res => res.json())
